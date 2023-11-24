@@ -1,0 +1,533 @@
+body {
+  margin: 0px;
+  border: 0px;
+  font-family: "Jost", sans-serif;
+  background: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  font-weight: 400;
+  margin: 0px;
+  border: 0px;
+  color: #b2b8bf;
+  line-height: 1.3;
+  letter-spacing: 0.2px;
+  font-size: 1.5rem;
+}
+
+.medium {
+  font-weight: 500;
+  color: #f5f7fa;
+}
+
+.semibold {
+  font-weight: 600;
+  color: #f5f7fa;
+}
+
+.bold {
+  font-weight: 700;
+  color: #f5f7fa;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #0b0c12;
+  max-width: 1069px;
+  margin: 0 auto;
+  padding: 100px 140px;
+  gap: 10px;
+}
+.nav {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: end;
+  justify-self: center;
+  margin-bottom: 10px;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  font-weight: 700;
+  justify-content: center;
+  padding: 0px;
+}
+
+.nav-list li {
+  color: #fff;
+  background: #130f1b;
+  border: 2px solid #130f1b;
+  border-radius: 5px;
+}
+
+.nav-list li:hover {
+  border: 2px solid #291d43;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #4f1dbc;
+  padding: 5px 10px;
+}
+
+.intro img {
+  grid-column: 1;
+  max-width: 100%;
+}
+
+.intro h1 {
+  font-size: 1.7rem;
+}
+
+.apresentacao {
+  grid-column: 1;
+  align-self: center;
+  max-width: 75ch;
+  place-self: center;
+  text-align: right;
+}
+
+.somatoria {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  padding: 20px 33px;
+  grid-column: 2;
+  grid-row: 2;
+  place-self: center;
+  margin-bottom: 60px;
+  background: #242833;
+  border-radius: 5px;
+}
+
+.somatoria h2 {
+  font-size: 3rem;
+}
+
+@media (max-width: 1000px) {
+  .intro {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: #0b0c12;
+    padding: 90px 150px;
+    gap: 20px;
+  }
+
+  .intro h1 {
+    text-align: center;
+  }
+
+  .nav {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: end;
+    justify-self: center;
+    margin: 10px 40px;
+  }
+
+  .intro img {
+    grid-column: 1;
+    max-width: 100%;
+  }
+
+  .somatoria {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 20px 33px;
+    grid-column: 1;
+    grid-row: 5;
+    place-self: center;
+    background: #242833;
+    border-radius: 5px;
+  }
+
+  .apresentacao {
+    grid-column: 1;
+    align-self: center;
+    max-width: 75ch;
+    place-self: center;
+    text-align: left;
+  }
+
+  .intro h1 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .intro {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: #0b0c12;
+    padding: 60px 40px;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .intro img {
+    grid-column: 1;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .intro h1 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .somatoria {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 20px 33px;
+    grid-column: 1;
+    grid-row: 4;
+    place-self: center;
+    background: #242833;
+    border-radius: 5px;
+  }
+
+  .somatoria h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .apresentacao {
+    grid-column: 1;
+    align-self: center;
+    max-width: 40ch;
+    place-self: center;
+    text-align: left;
+  }
+}
+
+.cursos {
+  padding-left: 140px;
+  padding-right: 140px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #e6eaf0;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0px;
+}
+
+.cursos h1,
+p {
+  color: #000;
+  font-size: 1.2rem;
+}
+
+.cursos h1 {
+  font-size: 4rem;
+  grid-column: 1 / -1;
+  margin-bottom: 40px;
+}
+
+.curso {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 60px;
+  background: #363b47;
+  padding: 15px 30px;
+  text-align: center;
+  border-radius: 5px;
+  position: relative;
+  list-style: none;
+}
+
+.curso .medium {
+  color: #989ea6;
+}
+
+.curso::after {
+  content: "";
+  width: 9px;
+  height: 30px;
+  background: linear-gradient(#7208fc, #4004c2);
+  position: absolute;
+  border-radius: 6px;
+  top: 7px;
+  left: -4px;
+}
+
+@media (max-width: 1000px) {
+  .cursos {
+    padding: 60px 140px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background: #e6eaf0;
+    justify-content: center;
+  }
+
+  .cursos p {
+    font-size: 0.9rem;
+  }
+
+  .curso {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    background: #363b47;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .cursos {
+    padding: 60px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #e6eaf0;
+    justify-items: center;
+  }
+
+  .cursos p {
+    font-size: 1rem;
+  }
+
+  .curso {
+    padding: 15px 30px;
+  }
+
+  .projetos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 60px 140px;
+    background: #242833;
+  }
+
+  .projetos .deco1 {
+    display: block;
+    max-width: 400px;
+    grid-column: 1 / -1;
+    margin-bottom: 110px;
+  }
+
+  .simbiose {
+    margin-bottom: 150px;
+    position: relative;
+  }
+
+  .simbiose::after {
+    content: "";
+    width: 1069px;
+    left: 1px;
+    height: 3px;
+    background: #363b47;
+    position: absolute;
+    top: 180px;
+  }
+
+  .realwine {
+    position: relative;
+    display: block;
+  }
+
+  @media (max-width: 1000px) {
+    .projetos {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 60px 140px;
+      background: #242833;
+    }
+
+    .projetos .deco1 {
+      display: block;
+      max-width: 300px;
+      grid-column: 1 / -1;
+      margin-bottom: 110px;
+    }
+
+    .simbiose {
+      margin: 0px;
+      position: relative;
+      justify-self: center;
+      display: inline;
+      margin-bottom: 40px;
+    }
+    .projetos h2 {
+      text-align: center;
+    }
+
+    .realwine {
+      position: relative;
+      display: block;
+      justify-self: center;
+      margin-top: 70px;
+      margin-bottom: 40px;
+    }
+
+    .simbiose::after {
+      content: "";
+      width: 703px;
+      left: -105px;
+      right: 11px;
+      height: 3px;
+      background: #363b47;
+      position: absolute;
+      top: 260px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .projetos {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 60px 40px;
+      background: #242833;
+      justify-content: center;
+    }
+
+    .simbiose img {
+      max-width: 400px;
+    }
+
+    .simbiose::after {
+      content: "";
+      width: 424px;
+      left: -10px;
+      right: 11px;
+      height: 3px;
+      background: #363b47;
+    }
+
+    .projetos h2 {
+      text-align: center;
+      font-size: 1.2em;
+    }
+
+    .realwine img {
+      max-width: 200px;
+    }
+  }
+
+  .final {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 60px 140px;
+    background: #000;
+    gap: 100px;
+  }
+
+  .final h3 {
+    grid-row: 1 / -1;
+    max-width: 36ch;
+    font-size: 2rem;
+  }
+  .sociais {
+    list-style: none;
+    display: inline;
+  }
+
+  .sociais li {
+    font-size: 3rem;
+    margin-top: 10px;
+    align-self: center;
+    display: grid;
+  }
+
+  .final img {
+    grid-column: 2;
+    justify-self: end;
+  }
+
+  @media (max-width: 1000px) {
+    .final {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      padding: 60px 150px;
+      background: #000;
+      gap: 60px;
+    }
+
+    .final h3 {
+      max-width: 40ch;
+      font-size: 1.2rem;
+    }
+
+    .sociais li {
+      font-size: 1.3rem;
+    }
+
+    .final img {
+      grid-column: 2;
+      justify-self: end;
+      max-width: 100px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .final {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 60px 40px;
+      background: #000;
+    }
+
+    .final h3 {
+      grid-row: 1;
+      max-width: 40ch;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    .sociais li {
+      font-size: 1.9rem;
+    }
+
+    .sociais {
+      display: block;
+      grid-row: 2;
+      text-align: center;
+    }
+
+    .final img {
+      max-width: 100px;
+      grid-row: 3;
+      grid-column: 1;
+    }
+
+    .pessoal {
+      grid-row: 1;
+    }
+  }
+
+  footer {
+    background: #363b47;
+    width: 100%;
+    text-align: center;
+    padding: 25px 0px;
+    background: #363b47;
+    height: 50px;
+  }
+
+  @media (max-width: 1000px) {
+    footer h4 {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    footer h4 {
+      font-size: 1rem;
+    }
+  }
+  footer {
+    height: 30px; 
+  }
+}
