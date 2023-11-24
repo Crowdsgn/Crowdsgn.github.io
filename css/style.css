@@ -35,13 +35,18 @@ p {
 }
 
 .intro {
+  background: #0b0c12;
+}
+
+.intro-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background: #0b0c12;
+  max-width: 1200px;
   max-width: 1069px;
   margin: 0 auto;
   padding: 100px 140px;
   gap: 10px;
+  margin: 0 auto;
 }
 .nav {
   grid-column: 2;
@@ -210,16 +215,35 @@ p {
   }
 }
 
+.formacao {
+  background: #e6eaf0;
+}
+
+.formacao-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projetos {
+  background: #242833;
+}
+
+.projetos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 60px 140px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .cursos {
   padding-left: 140px;
   padding-right: 140px;
   padding-top: 60px;
   padding-bottom: 60px;
-  background: #e6eaf0;
   margin: 0px auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin: 0px;
 }
 
 .cursos h1,
@@ -287,7 +311,7 @@ p {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .cursos {
     padding: 60px 40px;
     display: grid;
@@ -384,7 +408,7 @@ p {
     }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
     .projetos {
       display: grid;
       grid-template-columns: 1fr;
